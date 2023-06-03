@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Video.js Example</title>
+  <!-- Load video.js styles -->
+  <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+
+  <!-- Load video.js library -->
+  <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
+</head>
+
+<body>
+  <!-- Add video.js player element -->
+  <video id="my-video" class="video-js" controls preload="auto" width="640" height="264">
+    <!-- Add the m3u8 file as a source -->
+    <source src="https://k2helix-probable-space-computing-machine-64xrg4q94q7hxqqp-8000.preview.app.github.dev/hls_best/stream/index.m3u8" type="application/x-mpegURL">
+  </video>
+
+  <!-- Initialize the video.js player -->
+  <script>
+    var player = videojs('my-video');
+  </script>
+</body>
+</html>

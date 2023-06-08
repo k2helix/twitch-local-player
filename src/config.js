@@ -42,7 +42,7 @@ module.exports = {
     ],
   },
   trans: {
-    ffmpeg: '/usr/local/bin/ffmpeg',
+    ffmpeg: process.env.FFMPEG_PATH || '/usr/local/bin/ffmpeg',
     tasks: [
       {
         app: 'hls_best',
